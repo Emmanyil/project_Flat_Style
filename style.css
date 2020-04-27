@@ -1,0 +1,226 @@
+/* GLOBAL CONFIG */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 17px;
+  font-family: "Segoe WP Light", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ICON */
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?2i55sq");
+  src: url("fonts/icomoon.eot?2i55sq#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?2i55sq") format("truetype"),
+    url("fonts/icomoon.woff?2i55sq") format("woff"),
+    url("fonts/icomoon.svg?2i55sq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lock:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e901";
+}
+.icon-monitor:before {
+  content: "\e900";
+  color: #8ad1ce;
+  font-size: 60px;
+}
+.icon-cart:before {
+  content: "\e93a";
+  font-size: 25px;
+  background: #259d8e;
+  padding: 12px 15px;
+}
+.icon-mobile:before {
+  content: "\e958";
+  color: #8ad1ce;
+  font-size: 60px;
+}
+.icon-tablet:before {
+  content: "\e959";
+  color: #8ad1ce;
+  font-size: 60px;
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-earth:before {
+  content: "\e9ca";
+  font-size: 50px;
+  padding-right: 10px;
+  color: #a9e1dd;
+}
+.icon-star:before {
+  content: "\e9d7";
+}
+.icon-apple:before {
+  content: "\eabe";
+}
+.icon-shopping:before {
+  content: "\e903";
+}
+
+/* HEADER */
+.header {
+  padding: 18.5px 130px;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu li {
+  padding: 0 17px;
+  border-right: 1px solid #8e8e8e;
+}
+
+.nav-menu li:last-child {
+  border-right: none;
+}
+
+.nav-menu a {
+  color: #8e8e8e;
+  font-size: 19px;
+}
+
+.nav-menu a:hover {
+  color: #0fc3ae;
+}
+
+/* MAIN */
+.main {
+  height: 100vh;
+}
+
+.banner {
+  height: 100vh;
+  background: url(img/banner.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.box1 {
+  background: #079e96;
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  cursor: pointer;
+
+  position: absolute;
+  right: 240px;
+}
+
+.box2 {
+  background: #048a8a;
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  cursor: pointer;
+
+  position: absolute;
+  right: 120px;
+}
+
+.box3 {
+  background: #017e82;
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+}
+
+.box-border:after,
+.box-border:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.box-border:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #017e82;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+.content {
+    padding: 180px 300px 0 675px;
+    color: #ffffff;
+}
+
+.map-text {
+  font-size: 21px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.title h1 {
+  font-size: 39px;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.title h2 {
+  font-size: 17px;
+  padding: 5px 0 35px 3px;
+}
+
+.buy {
+  width: 170px;
+  padding: 12px 20px 12px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  background: #54d3c3;
+  cursor: pointer;
+}
+
+.icon-cart {
+  transform: rotateY(180deg);
+}
+

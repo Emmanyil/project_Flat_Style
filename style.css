@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  padding: 0 130px;
+}
+
 /* ICON */
 @font-face {
   font-family: "icomoon";
@@ -46,9 +50,13 @@ a {
 
 .icon-lock:before {
   content: "\e902";
+  font-size: 80px;
+  color: #ffffff;
 }
 .icon-search:before {
   content: "\e901";
+  font-size: 80px;
+  color: #ffffff;
 }
 .icon-monitor:before {
   content: "\e900";
@@ -59,6 +67,12 @@ a {
   content: "\e93a";
   font-size: 25px;
   background: #259d8e;
+  padding: 12px 15px;
+}
+.icon-cart1:before {
+  content: "\e93a";
+  font-size: 25px;
+  background: #3edac6;
   padding: 12px 15px;
 }
 .icon-mobile:before {
@@ -73,6 +87,8 @@ a {
 }
 .icon-switch:before {
   content: "\e9b6";
+  font-size: 80px;
+  color: #ffffff;
 }
 .icon-earth:before {
   content: "\e9ca";
@@ -82,17 +98,23 @@ a {
 }
 .icon-star:before {
   content: "\e9d7";
+  font-size: 80px;
+  color: #ffffff;
 }
 .icon-apple:before {
   content: "\eabe";
+  font-size: 80px;
+  color: #ffffff;
 }
 .icon-shopping:before {
   content: "\e903";
+  font-size: 80px;
+  color: #ffffff;
 }
 
 /* HEADER */
 .header {
-  padding: 18.5px 130px;
+  padding: 18.5px 0;
 }
 
 .logo-menu {
@@ -129,47 +151,35 @@ a {
 }
 
 .banner {
-  height: 100vh;
+  padding-bottom: 121px;
   background: url(img/banner.png) no-repeat;
-  background-size: 100%;
   position: relative;
 }
 
-.box1 {
-  background: #079e96;
-  width: 120px;
-  height: 120px;
-  padding: 30px;
+.box-monitor,
+.box-tablet,
+.box-mobile {
   cursor: pointer;
-
+  padding: 30px;
   position: absolute;
+}
+
+.box-monitor {
+  background: #079e96;
   right: 240px;
 }
 
-.box2 {
+.box-tablet {
   background: #048a8a;
-  width: 120px;
-  height: 120px;
-  padding: 30px;
-  cursor: pointer;
-
-  position: absolute;
   right: 120px;
 }
 
-.box3 {
+.box-mobile {
   background: #017e82;
-  width: 120px;
-  height: 120px;
-  padding: 30px;
-  cursor: pointer;
-
-  position: absolute;
   right: 0;
 }
 
-.box-border:after,
-.box-border:before {
+.box-border::before {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -179,16 +189,16 @@ a {
   position: absolute;
 }
 
-.box-border:after {
+.box-border::before {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #017e82;
   border-width: 15px;
   margin-left: -15px;
 }
 
-.content {
-    padding: 180px 300px 0 675px;
-    color: #ffffff;
+.text-on-banner {
+  padding: 180px 0 0 675px;
+  color: #ffffff;
 }
 
 .map-text {
@@ -199,13 +209,12 @@ a {
   padding-bottom: 60px;
 }
 
-.title h1 {
+.title h2 {
   font-size: 39px;
   text-transform: uppercase;
-  line-height: 1.4;
 }
 
-.title h2 {
+.title h3 {
   font-size: 17px;
   padding: 5px 0 35px 3px;
 }
@@ -220,7 +229,117 @@ a {
   cursor: pointer;
 }
 
+.buy:hover {
+  background: #259d8e;
+}
+
 .icon-cart {
   transform: rotateY(180deg);
 }
 
+/* ABOUT */
+.about {
+  padding: 45px 0 120px;
+}
+.about-text {
+  font-size: 15px;
+  color: #818181;
+  text-align: center;
+  padding: 0 30px 45px 70px;
+}
+
+.about-text p {
+  line-height: 1.5;
+}
+
+.about-text h1 {
+  font-size: 41px;
+  color: #636363;
+  padding-bottom: 30px;
+}
+
+.about-background {
+  height: 421px;
+  background: url(/img/about.png) no-repeat;
+  background-position-x: 55%;
+}
+
+/* SEC3 */
+.sec3 {
+  background: linear-gradient(to right, #006269, #099e94);
+}
+
+.boxs-all {
+  display: flex;
+  align-items: center;
+}
+
+.shell {
+  padding: 45px 71.5px;
+  cursor: pointer;
+}
+
+.box-search {
+  background: #01646c;
+}
+
+.box-switch {
+  background: #097b84;
+}
+
+.box-apple {
+  background: #118f99;
+}
+
+.box-shopping {
+  background: #1da0aa;
+}
+
+.box-lock {
+  background: #29b7c2;
+}
+
+.box-star {
+  background: #3ccad5;
+}
+
+.sec3 img {
+  padding: 120px 0 75px 45px;
+}
+
+.text-on-sec3 {
+  padding-top: 180px;
+  color: #ffffff;
+}
+
+.img-text {
+  display: flex;
+}
+
+.title2 h2 {
+  font-size: 39px;
+  text-transform: uppercase;
+}
+
+.title2 h3 {
+  font-size: 17px;
+  padding: 5px 0 35px 3px;
+}
+
+.buy2 {
+  width: 170px;
+  padding: 12px 20px 12px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  background: #06ccb3;
+  cursor: pointer;
+}
+
+.buy2:hover {
+  background: #259d8e;
+}
+
+.icon-cart1 {
+  transform: rotateY(180deg);
+}

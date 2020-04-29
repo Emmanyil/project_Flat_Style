@@ -147,7 +147,7 @@ a {
 
 /* MAIN */
 .main {
-  height: 100vh;
+  flex-grow: 1;
 }
 
 .banner {
@@ -342,4 +342,42 @@ a {
 
 .icon-cart1 {
   transform: rotateY(180deg);
+}
+
+/* SEC4 */
+.sec4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.str1 {
+  background: #49d7b0;
+  padding: 139px 155px;
+}
+
+.text5 {
+  color: #49d7b0;
+  
+  padding: 0 180px 0 240px;
+  text-transform: uppercase;
+}
+
+.text5 h2 {
+  font-weight: bold;
+  font-size: 200px;
+}
+
+.text5 p {
+  font-size: 68px;
+}
+
+
+/* FOOTER */
+.footer {
+  font-size: 23px;
+  color: #979797 ;
+  border-top: 1px solid #dedede;
+  padding: 38.5px 0;
+  text-align: center;
 }
